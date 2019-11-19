@@ -1,0 +1,128 @@
+
+a:hover { color: #dba3c3 !important;  }
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 10px auto;
+	
+}
+.toggleMenu {
+    display:  none;
+	font-family: '"Times New Roman", Times, serif';
+	font-size: 2em;
+    padding: 10px 15px;
+    color: #5f2c33;
+	width: 30px;
+	height: 30px;
+	margin: 1em 0 0 0;
+	position: relative;
+	background: url(../images/ico-mobile.png) top left no-repeat;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+	 margin: 0 auto;
+	 padding: 0;
+	 width: auto;
+}
+.nav:before,
+.nav:after {
+    content: " "; 
+    display: table; 
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 19em;
+	padding-left: 0px;
+	
+}
+.nav a {
+    padding: 10px 32px;
+    color:#000000;
+	margin-left: 0;
+	font-family: '"Times New Roman", Times, serif';
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.nav li {
+    position: relative;
+}
+.nav > li {
+    float: left;
+
+}
+.nav > li > .parent {
+    background-image: url("../images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.nav > li > a {
+    display: block;
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+	
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+	
+}
+.nav li li a:hover {
+	background-color: #f8f8f8; -webkit-transition:0.8s ease;-moz-transition:0.3s ease;-ms-transition:0.3s ease;-o-transition:0.3s ease;transition:0.3s ease;
+}
+.nav li li a {
+    display: block;
+    position: relative;
+    z-index:100;
+    border-top: 1px solid #ededed;
+	border-right: 1px solid #ededed;
+	border-left: 1px solid #ededed;
+	font-size: 13px;
+	background-color: #fff; 
+}
+	.nav li li:last-child { border-bottom: 1px solid #ededed; }
+	
+.nav li li li a {
+    z-index:200;
+    border-top: 1px solid #ededed; 
+}
+
+@media screen and (max-width: 480px) {
+	
+
+    .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;background-color: #fff !important; 
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+    }
+    .nav li li .parent {
+        background-image: url("../images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;  
+		
+		
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
