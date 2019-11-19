@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PC</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown-style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0c61c9e924.js"></script>
+
+
+
+
+  </head>
+<body>
+    
+ <!-- header -->
+ <header>
+  <!-- navbar  -->
+  <!-- 
+https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+Creative Commons (Attribution 3.0 Unported);
+https://www.iconfinder.com/korawan_m
+   -->
+  <nav class="navbar navbar-expand-lg px-4">
+    <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+      <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNav">
+      <ul class="navbar-nav mx-auto text-capitalize">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#">about</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" class="toggleMenu" href="#">store</a>
+         
+          <!--ul>
+            <li><a href="">Samsung</a></li>
+                  <li><a href="">Sony</a></li>
+                  <li><a href="">Apple</a></li>
+                <li><a href="">Nokia</a></li>
+                 <li><a href="">HTC</a>
+                  <li><a href="">Infinix</a>
+                  <li><a href="">Tecno</a>
+                 
+             </ul> -->
+       
+        </li>
+      </ul>
+      <div class="nav-info-items d-none d-lg-flex ">
+        <!-- single info -->
+        <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+          <span class="info-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+          <p class="mb-0">+2348166905644 </p>
+          <span class="info-icon mx-lg-3"><i class="fab fa-instagram "></i></span>
+          <p class="mb-0">IG</p>
+          <span class="info-icon mx-lg-3"><i class="fab fa-facebook"></i></span>
+          <p class="mb-0">FB</p>
+          <span class="info-icon mx-lg-3"><i class="fab fa-twitter"></i></span>
+          <p class="mb-0">TW</p>
+        </div>
+        <!-- end of single info -->
+        <!-- single info -->
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+          <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+          <p class="mb-0 text-capitalize"><span id="item-count">2 </span> product - N<span class="item-total">145000</span></p>
+        </div>
+        <!-- end of single info -->
+      </div>
+    </div>
+  </nav>
+      
+     
+    
+    
+      <!-- store -->
+      <section id="store" class="store py-5">
+        <div class="container">
+          <!-- section title -->
+          <div class="row">
+            <div class="col-10 mx-auto col-sm-6 text-center">
+              <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+            </div>
+          </div>
+          <!-- end of section title -->
+          <!--filter buttons -->
+          <div class="row">
+            <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+              <a href="#All" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+              <a href="index.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">apple</a>
+              <a href="samsung.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">samsung</a>
+              <a href="Accessories.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">accessories</a>
+              <a href="PC.html" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">pc</a>
+            </div>
+          </div>
+          <!-- search box -->
+          <div class="row">
+    
+            <div class="col-10 mx-auto col-md-6">
+              <form>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend ">
+                    <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder='product....' id="search-item">
+                </div>
+    
+              </form>
+            </div>
+          </div>
+          <!--end of filter buttons -->
+          <!-- store  items-->
+          <div class="row" class="store-items" id="store-items">
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp4.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">Hp- Pav</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">230,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp5.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">Hp-d</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">245,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp7.png" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-c</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">257,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp8.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-e</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">253,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp-pav.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-pav1</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">273,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/hp-spectre-x360-apple-macbook-pro400.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp & mac-pro</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">193,000 & 278,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/slider-ge2.png" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-r</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">235,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/slider-wl1.jpeg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-360</h5>
+                    <h5 class="store-item-value">N<strong id="store-item-price" class="font-weight-bold">255,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/slider-be5.jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">Mac-Des</h5>
+                    <h5 class="store-item-value">N <strong id="store-item-price" class="font-weight-bold">173,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            <!--end of single store item-->
+            <!-- single item -->
+            <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+              <div class="card ">
+                <div class="img-container">
+                  <img src="img/HP (8Gig Ram).jpg" class="card-img-top store-img" alt="">
+                  <span class="store-item-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </span>
+                </div>
+                <div class="card-body">
+                  <div class="card-text d-flex justify-content-between text-capitalize">
+                    <h5 id="store-item-name">hp-dk</h5>
+                    <h5 class="store-item-value">N<strong id="store-item-price" class="font-weight-bold">210,000</strong></h5>
+    
+                  </div>
+                </div>
+    
+    
+              </div>
+              <!-- end of card-->
+            </div>
+            
+        </div>
+      </section>
+      <!--end of store items -->
+    
+    
+      <!-- modal-container -->
+      <div class="container-fluid ">
+        <div class="row lightbox-container align-items-center">
+          <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+            <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+            <div class="lightbox-item"></div>
+            <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+            <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+          </div>
+    
+        </div>
+      </div>
+    
+      <div class="footlinks">
+          <ul>
+                <li>
+                  <div class="sepbarr">
+                    <h3>Original Dealz Consult </h3>
+                    <p>Shop 2243 Road 90 Block 1014<br />
+                       Computer Village Ikeja. Lagos<br />
+                       P.O.Box 1231<br />
+                       Email: <a href="mailto:info@doeadeerbahrain.com" class="flink">info@originaldealzconsult.com</a><br />
+                       Tel:08166905644 | 08020750155
+                    </p>
+                    </div>
+                </li>
+                <li>
+                    <h3>Stay Connected</h3>
+                    <p><a href="#">Facebook</a><br />
+                       <a href="#">Twitter</a><br />
+                       <a href="#">Google+</a><br />
+                       <a href="https://instagram.com/originaldealzconsult" target="_blank">Instagram</a><br />
+                    </p>
+                </li>
+                <div class="section">
+                  <h4>Contact Us</h4> 
+                  <div class="container-input">
+                    <input class="text-input" type="text" placeholder="name">
+                  </div>
+                 NAME
+                </div>
+                <div class="container-input">
+                  <input class="text-input" type="text" placeholder="Email">
+                </div>
+                EMAIL
+              </div>  
+          </div>
+        <div class="clear"></div>
+                        
+                <div class="sept center">
+                  <h6>Copyright © 2019 Original Dealz Consult. All Rights Reserved.</h6>
+                  <p>Powered by YOAZ <span>Atelier</span></p>
+                </div>
+          
+    </div> 
+     
+     
+     
+     
+     
+     
+     
+     
+      <!-- jquery -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- script js -->
+      <script src="js/app.js"></script>
+
+
+
+</body>
+</html>
